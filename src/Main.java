@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     static class RomanNumbers {
          static int convertToRomansNumbers(String x) {
@@ -71,6 +73,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(calc("VI*VIII"));
+        System.out.print("Enter an expression: ");
+        Scanner scanner = new Scanner(System.in);
+        String expression = scanner.next();
+        System.out.println(calc(expression));
     }
 }
